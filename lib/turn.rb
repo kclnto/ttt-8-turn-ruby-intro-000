@@ -18,9 +18,7 @@ def move(board, index, player = "X")
   if (valid_move?(board, index) == TRUE)
     board[index] = player
   else
-    input = gts.strip
-    input_to_index(input)
-    index = input.to_i
+  turn (board, index, player = "X")
   end
 end
 
