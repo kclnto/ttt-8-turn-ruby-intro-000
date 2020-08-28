@@ -57,9 +57,4 @@ def turn(board)
   while (position_taken?(board,index) == TRUE) || (valid_move?(board,index) == FALSE)
     turn(board, index, player = "X")
   end
-
-  #input_to_index(input)
-  #move(board, index, player = "X")
-  #valid_move?(board, index)
-  #position_taken?(board, index)
 end
