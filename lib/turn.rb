@@ -50,7 +50,7 @@ def position_taken?(board, index)
   end
 end
 
-def turn(board) 
+def turn(board, index, player = "X") 
   input = gets.strip
   input_to_index(input)
   move(board, index, player = "X")
