@@ -9,7 +9,3 @@ puts "Welcome to Tic Tac Toe!"
 display_board(board)
 
 turn(board, index, player = "X")
-
-
-move(board, index, player = "X")
-
