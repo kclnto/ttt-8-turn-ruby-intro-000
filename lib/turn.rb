@@ -45,10 +45,10 @@ def position_taken?(board, index)
   end
 end
 
-def turn(board, index, player = "X") 
+def turn(board, player = "X") 
   puts "Please enter 1-9:"
   input = gets.strip
-  input_to_index(input)
+  index = input_to_index(input)
   move(board, index, player = "X")
   while (position_taken?(board,index) == TRUE) || (valid_move?(board,index) == FALSE)
     turn(board, index, player = "X")
