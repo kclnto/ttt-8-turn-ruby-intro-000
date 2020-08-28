@@ -55,4 +55,5 @@ def turn(board)
   input = gets.strip
   index = input_to_index(input)
   move(board, index, player = "X")
+  diaplay_board(board)
 end
