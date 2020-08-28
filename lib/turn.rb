@@ -15,7 +15,7 @@ end
 
 
 def move(board, index, player = "X")
-  if (valid_move?(board, index) == TRUE)
+  if (valid_move?(board, index) == TRUE) && (position_taken?(board, index) == FALSE)
     board[index] = player
   end
 end
