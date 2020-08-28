@@ -53,7 +53,7 @@ end
 def turn(board, index, player = "X") 
   move(board, index, player = "X")
   while (position_taken?(board,index) == TRUE) || (valid_move?(board,index) == FALSE)
-    turn(board)
+    turn(board, index, player = "X")
   end
 
   #input_to_index(input)
