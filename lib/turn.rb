@@ -51,6 +51,7 @@ def position_taken?(board, index)
 end
 
 def turn(board, index, player = "X") 
+  input = gets.strip
   move(board, index, player = "X")
   while (position_taken?(board,index) == TRUE) || (valid_move?(board,index) == FALSE)
     turn(board, index, player = "X")
