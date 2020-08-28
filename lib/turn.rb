@@ -17,6 +17,11 @@ end
 def move(board, index, player = "X")
   if (valid_move?(board, index) == TRUE) && (position_taken?(board, index) == FALSE)
     board[index] = player
+  else
+    puts "Please enter 1-9:"
+    input = gets.strip
+    index = input_to_index(input)
+    move(board, index, player = "X")
   end
 end
 
