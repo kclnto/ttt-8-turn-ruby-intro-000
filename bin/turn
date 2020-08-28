@@ -10,8 +10,6 @@ display_board(board)
 
 turn(board, index, player = "X")
 
-input = gets.strip
-
 input_to_index(input)
 
 move(board, index, player = "X")
