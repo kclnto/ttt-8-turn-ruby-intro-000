@@ -51,6 +51,7 @@ def position_taken?(board, index)
 end
 
 def turn(board) 
+  puts "Please enter 1-9:"
   while (position_taken?(board,index) == TRUE) || (valid_move?(board,index) == FALSE)
     turn(board)
   end
