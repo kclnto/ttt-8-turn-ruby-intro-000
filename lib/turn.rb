@@ -18,7 +18,6 @@ def move(board, index, player = "X")
   if (valid_move?(board, index) == TRUE)
     board[index] = player
   else
-    puts "Please enter 1-9:"
     input = gts.strip
     input_to_index(input)
     index = input.to_i
@@ -51,6 +50,7 @@ def position_taken?(board, index)
 end
 
 def turn(board, index, player = "X") 
+  puts "Please enter 1-9:"
   input = gets.strip
   input_to_index(input)
   move(board, index, player = "X")
