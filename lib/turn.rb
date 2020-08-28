@@ -17,8 +17,6 @@ end
 def move(board, index, player = "X")
   if (valid_move?(board, index) == TRUE)
     board[index] = player
-  else
-  turn (board, index, player = "X")
   end
 end
 
