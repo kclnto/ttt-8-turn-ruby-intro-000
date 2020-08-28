@@ -10,7 +10,6 @@ display_board(board)
 
 turn(board, index, player = "X")
 
-input_to_index(input)
 
 move(board, index, player = "X")
 
