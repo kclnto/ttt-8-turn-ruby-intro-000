@@ -50,7 +50,7 @@ def turn(board)
   input = gets.strip
   index = input_to_index(input)
   move(board, index, player = "X")
-  while (position_taken?(board,index) == TRUE) || (valid_move?(board,index) == TRUE)
+  if (position_taken?(board,index) == TRUE) || (valid_move?(board,index) == TRUE)
     turn(board)
   end
 end
